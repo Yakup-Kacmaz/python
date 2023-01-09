@@ -1,6 +1,6 @@
 import time
 
-baslık="Bu bir örnek hesap makinesi uygulamasıdır."
+baslık="HESAP MAKİNESİ."
 giriş="""
 (1) topla işlemi
 (2) fark işlemi
@@ -35,8 +35,7 @@ while True:
 		if islem in ["1","2","3","4","5","6"]:
 			sayi1=int(input("{}".format(yazilar[islem].split("-")[1])))
 			if (islem+islem) in yazilar:
-				sayi2=int(input("{}".format(yazilar.get(islem+islem))))#get yerine [] kullansaydık islemislem olmadığında hata alırdık. Şimdi hata almayacağız
-				#Sadece null değeri geri dönecek
+				sayi2=int(input("{}".format(yazilar.get(islem+islem)))
 	except:
 		print("Bir tamsayı girilmedi. Tekrar deneyin!\n")
 		continue
